@@ -9,6 +9,7 @@ const state = {
 const actions = {
   init: firebaseAction(({ bindFirebaseRef }) => {
     bindFirebaseRef('subreddits', db.collection('subreddits'));
+    // console.log(db.collection('subreddits'));
   }),
 };
 
